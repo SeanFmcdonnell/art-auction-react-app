@@ -12,7 +12,7 @@ import image7 from './image7.jpg';
 import image8 from './image8.jpg';
 
 const Home = () => (
-  <div> 
+  <div>
     <Carousel>
       <Carousel.Item>
         <Img alt="image4" src={image4}/>
@@ -64,9 +64,9 @@ const Home = () => (
         <Img src={image7} alt="Image"/>
         	<p>Description</p>
       </Col>
-      <Col md={4}> 
+      <Col md={4}>
         <Img src={image8} alt="Image"/>
-        	<p>Description</p>    
+        	<p>Description</p>
       </Col>
       <Col md={4}>
         <div>

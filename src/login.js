@@ -10,7 +10,7 @@ class LifeCycleDemo extends Component{
 	}
 	ComponentDidMount(){
 		this.setState(this.state{
-			message:"Namratha"
+			message:"Sean"
 		});
 	}
 	ComponentDidUpdate(){
@@ -18,7 +18,7 @@ class LifeCycleDemo extends Component{
 	}
 	render(){
 		return(
-			<div> 
+			<div>
 				{this.state.message}
 			</div>
 		}

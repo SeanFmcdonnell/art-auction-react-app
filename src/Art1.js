@@ -11,8 +11,8 @@ export default class Art1 extends Component {
     	super(props);
     	this.state = {value: ''};
     	this.pubnub = new PubNubReact({
-            publishKey: 'ENTER_YOUR_PUBLISH_KEY',
-            subscribeKey: 'ENTER_YOUR_SUBSCRIBE_KEY'
+            publishKey: 'pub-c-fadccdd5-940d-40c7-8919-ee39eed1be9e',
+            subscribeKey: 'sub-c-43f4ebaa-c676-11e8-a415-1a3a09e2960b'
         });
     	this.pubnub.init(this);
     	this.handleChange = this.handleChange.bind(this);
@@ -54,7 +54,7 @@ export default class Art1 extends Component {
  						this.last_message = msg.message;
  						console.log('this.last_message 1'+this.last_message);
          });
- 				
+
      }
 
 	render() {
@@ -63,7 +63,7 @@ export default class Art1 extends Component {
 	    	<div>
 					<Row>
 						<Col md={6}>
-				    	<Img height={360} width={636} src={image9}/>
+				    	<Img height={250} width={250} src={image9}/>
 				    	<br/>
 				    	<br/>
 				    	<form onSubmit={this.handleSubmit} style={{marginLeft: 10 + 'em'}}>

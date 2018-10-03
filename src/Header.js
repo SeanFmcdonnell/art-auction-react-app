@@ -17,13 +17,11 @@ export default class Header extends PureComponent {
         <Navbar inverse collapseOnSelect style={{display:"flex", flexDirection:"row"}}>
           <Navbar.Header >
             <Navbar.Brand className="brand">
-              Online Bidding System
+              Bid Wrangler
             </Navbar.Brand>
           <Nav style={{display:"flex", flexDirection:"row"}} >
-            <NavItem eventKey={1} href="/">Home</NavItem>
-            <NavItem eventKey={2} href="/products">Products</NavItem>
-            <NavItem eventKey={3} href="/contact">Contact</NavItem>
-            <NavItem eventKey={4} href="/about">About</NavItem>
+            <NavItem eventKey={1} href="/dashboard">Dashboard</NavItem>
+            <NavItem eventKey={2} href="/products">Art</NavItem>
             <NavItem><ModalComponent value={this.state.value} onChangeValue={this.handleChangeValue}/></NavItem>
           </Nav>
         </Navbar.Header>

@@ -1,0 +1,11 @@
+<form onSubmit={this.handleSubmit}>
+  <ModalHeader>Live Bidding Registration</ModalHeader>
+  <ModalBody>
+    <label>Name:</label>
+    <input type="text" value={this.state.name} onChange={this.handleChangeName} className="form-control" />
+  </ModalBody>
+  <ModalFooter>
+    <Button type="submit" onClick={this.handleSubmit} color="success" className="btn btn-success">Register</Button>
+    <Button color="danger" onClick={this.toggle}>Cancel</Button>
+  </ModalFooter>
+</form>
